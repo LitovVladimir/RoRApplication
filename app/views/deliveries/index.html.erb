@@ -16,8 +16,8 @@
   <tbody>
     <% @deliveries.each do |delivery| %>
       <tr>
-        <td><%= delivery.book %></td>
-        <td><%= delivery.subscriber %></td>
+        <td><%= delivery.book_id %></td>
+        <td><%= delivery.subscriber_id %></td>
         <td><%= delivery.delivery_date %></td>
         <td><%= delivery.return_date %></td>
         <td><%= link_to 'Show', delivery %></td>
