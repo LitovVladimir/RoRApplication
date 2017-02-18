@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02add9f5-2cef-41da-9007-76a380c24684" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/initializers/rails_defaults.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/application_record.rb" afterPath="$PROJECT_DIR$/app/models/application_record.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/books/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/books/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/books/index.html.erb" afterPath="$PROJECT_DIR$/app/views/books/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/books/show.html.erb" afterPath="$PROJECT_DIR$/app/views/books/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deliveries/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/deliveries/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deliveries/index.html.erb" afterPath="$PROJECT_DIR$/app/views/deliveries/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deliveries/show.html.erb" afterPath="$PROJECT_DIR$/app/views/deliveries/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/employees/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/employees/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/employees/index.html.erb" afterPath="$PROJECT_DIR$/app/views/employees/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/employees/show.html.erb" afterPath="$PROJECT_DIR$/app/views/employees/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/libraries/index.html.erb" afterPath="$PROJECT_DIR$/app/views/libraries/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/libraries/show.html.erb" afterPath="$PROJECT_DIR$/app/views/libraries/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subscribers/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/subscribers/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subscribers/index.html.erb" afterPath="$PROJECT_DIR$/app/views/subscribers/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/subscribers/show.html.erb" afterPath="$PROJECT_DIR$/app/views/subscribers/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
     </list>
     <ignored path="RoRApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -870,12 +852,20 @@
       <updated>1487278538303</updated>
       <workItem from="1487278539909" duration="138000" />
       <workItem from="1487344655676" duration="482000" />
-      <workItem from="1487407102260" duration="6779000" />
+      <workItem from="1487407102260" duration="6879000" />
     </task>
+    <task id="LOCAL-00001" summary="Исправлен вывод вторичного ключа на страницах, теперь отображается его значение. Так же добавлен seed для автоматического заполнения базы данных.">
+      <created>1487431627481</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1487431627481</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7399000" />
+    <option name="totallyTimeSpent" value="7499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="177" y="149" width="1682" height="816" extended-state="0" />
@@ -910,6 +900,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Исправлен вывод вторичного ключа на страницах, теперь отображается его значение. Так же добавлен seed для автоматического заполнения базы данных." />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлен вывод вторичного ключа на страницах, теперь отображается его значение. Так же добавлен seed для автоматического заполнения базы данных." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
