@@ -1,8 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Libraries</h1>
+<h1 class = 'table_name'>Таблица: Libraries
+  <p><%= link_to "<button class = 'add_button' type='button'></button>".html_safe, new_library_path %></p>
+</h1>
 
-<table>
+
+<table class ='table_blur'>
   <thead>
     <tr>
       <th>Id</th>
@@ -20,14 +23,13 @@
         <td><%= library.number %></td>
         <td><%= library.name %></td>
         <td><%= library.address %></td>
-        <td><%= link_to 'Show', library %></td>
-        <td><%= link_to 'Edit', edit_library_path(library) %></td>
-        <td><%= link_to 'Destroy', library, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Посмотреть', library %></td>
+        <td><%= link_to 'Изменить', edit_library_path(library) %></td>
+        <td><%= link_to 'Удалить', library, method: :delete, data: { confirm: 'Вы уверены, что хотите удалить
+        запись?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Library', new_library_path %>
