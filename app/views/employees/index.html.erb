@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Employees</h1>
 
-<table>
+<h1 class = 'table_name'>Таблица: Employees</h1>
+<div><%= link_to "<button class = 'add_button' type='button'></button>".html_safe, new_employee_path %></div>
+
+<table class="table_blur">
   <thead>
     <tr>
       <th>Library</th>
@@ -28,9 +30,10 @@
         <td><%= employee.employment_date %></td>
         <td><%= employee.post %></td>
         <td><%= employee.education %></td>
-        <td><%= link_to 'Show', employee %></td>
-        <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
-        <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Посмотреть', employee %></td>
+        <td><%= link_to 'Изменить', edit_employee_path(employee) %></td>
+        <td><%= link_to 'Удалить', employee, method: :delete,
+                        data: { confirm: 'Вы уверены, что хотите удалить запись?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -38,4 +41,3 @@
 
 <br>
 
-<%= link_to 'New Employee', new_employee_path %>

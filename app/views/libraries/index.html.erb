@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1 class = 'table_name'>Таблица: Libraries
-  <p><%= link_to "<button class = 'add_button' type='button'></button>".html_safe, new_library_path %></p>
-</h1>
+<h1 class = 'table_name'>Таблица: Libraries</h1>
+<div><%= link_to "<button class = 'add_button' type='button'></button>".html_safe, new_library_path %></div>
 
 
 <table class ='table_blur'>
@@ -25,8 +24,8 @@
         <td><%= library.address %></td>
         <td><%= link_to 'Посмотреть', library %></td>
         <td><%= link_to 'Изменить', edit_library_path(library) %></td>
-        <td><%= link_to 'Удалить', library, method: :delete, data: { confirm: 'Вы уверены, что хотите удалить
-        запись?' } %></td>
+        <td><%= link_to 'Удалить', library, method: :delete,
+                        data: { confirm: 'Вы уверены, что хотите удалить запись?' } %></td>
       </tr>
     <% end %>
   </tbody>

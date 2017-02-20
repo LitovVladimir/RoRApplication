@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Books</h1>
+<h1 class = 'table_name'>Таблица: Books</h1>
+<div><%= link_to "<button class = 'add_button' type='button'></button>".html_safe, new_book_path %></div>
 
-<table>
+<table class="table_blur">
   <thead>
     <tr>
       <th>Library</th>
@@ -28,9 +29,10 @@
         <td><%= book.publishing_year %></td>
         <td><%= book.price %></td>
         <td><%= book.receipt_date %></td>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Посмотреть', book %></td>
+        <td><%= link_to 'Изменить', edit_book_path(book) %></td>
+        <td><%= link_to 'Удалить', book, method: :delete,
+                        data: { confirm: 'Вы уверены, что хотите удалить запись?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -38,4 +40,3 @@
 
 <br>
 
-<%= link_to 'New Book', new_book_path %>

@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Deliveries</h1>
+<h1 class = 'table_name'>Таблица: Deliveries</h1>
+<div><%= link_to "<button class = 'add_button' type='button'></button>".html_safe, new_delivery_path %></div>
 
-<table>
+<table class="table_blur">
   <thead>
     <tr>
       <th>Book</th>
@@ -20,14 +21,13 @@
         <td><%= delivery.subscriber_id %></td>
         <td><%= delivery.delivery_date %></td>
         <td><%= delivery.return_date %></td>
-        <td><%= link_to 'Show', delivery %></td>
-        <td><%= link_to 'Edit', edit_delivery_path(delivery) %></td>
-        <td><%= link_to 'Destroy', delivery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Посмотреть', delivery %></td>
+        <td><%= link_to 'Изменить', edit_delivery_path(delivery) %></td>
+        <td><%= link_to 'Удалить', delivery, method: :delete,
+                        data: { confirm: 'Вы уверены, что хотите удалить запись?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Delivery', new_delivery_path %>
