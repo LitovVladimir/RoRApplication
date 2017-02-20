@@ -93,6 +93,19 @@ label {
   display: block;
 }
 
+.field{
+  text-align: center;
+}
+
+.actions{
+  text-align: center;
+}
+.link_back{
+  text-align: center;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  color: #730E15;
+}
 .table_name {
   text-align: center;
 }
@@ -191,6 +204,36 @@ label {
   height:75px;
   border: none;
   background-image: url(asset-path('fab_add.png'));
+  background-size: contain;
+  background-position:center;
+  -webkit-filter:grayscale(20%);
+  z-index: 1;
+}
+
+.back_button {
+  position:fixed;
+  left:20%;
+  top:80%;
+  width:75px;
+  height:75px;
+  border: none;
+  background-image: url(asset-path('back_arrow.png'));
+  background-size: contain;
+  background-position:center;
+  background-color:transparent;
+  outline:0;
+  z-index: 1;
+}
+
+.back_button:active {
+  outline:0;
+  position:fixed;
+  left:20%;
+  top:80%;
+  width:75px;
+  height:75px;
+  border: none;
+  background-image: url(asset-path('back_arrow.png'));
   background-size: contain;
   background-position:center;
   -webkit-filter:grayscale(20%);
