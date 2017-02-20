@@ -1,44 +1,37 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Библиотека:</strong>
-  <%= @book.library_id %>
-</p>
+<h1 class="table_name">Просмотр записи</h1>
 
-<p>
-  <strong>Название книги:</strong>
-  <%= @book.name %>
-</p>
+<div class = show_container>
+  <table class="table_blur">
+    <thead>
+    <tr>
+      <th>Библиотека</th>
+      <th>Название книги</th>
+      <th>Автор</th>
+      <th>Шифр</th>
+      <th>Издательство</th>
+      <th>Год издания</th>
+      <th>Цена</th>
+      <th>Дата поступления</th>
+      <th colspan="3"></th>
+    </tr>
+    </thead>
 
-<p>
-  <strong>Автор:</strong>
-  <%= @book.author %>
-</p>
+    <tbody>
+        <tr>
+          <td><%= @book.library_id %></td>
+          <td><%= @book.name %></td>
+          <td><%= @book.author %></td>
+          <td><%= @book.cipher %></td>
+          <td><%= @book.publishing_house %></td>
+          <td><%= @book.publishing_year %></td>
+          <td><%= @book.price %></td>
+          <td><%= @book.receipt_date %></td>
+          <td><%= link_to 'Изменить', edit_book_path(@book) %></td>
+        </tr>
+    </tbody>
+  </table>
+</div>
 
-<p>
-  <strong>Шифр:</strong>
-  <%= @book.cipher %>
-</p>
-
-<p>
-  <strong>Издательство:</strong>
-  <%= @book.publishing_house %>
-</p>
-
-<p>
-  <strong>Год издания:</strong>
-  <%= @book.publishing_year %>
-</p>
-
-<p>
-  <strong>Цена:</strong>
-  <%= @book.price %>
-</p>
-
-<p>
-  <strong>Дата поступления:</strong>
-  <%= @book.receipt_date %>
-</p>
-
-<%= link_to 'Изменить', edit_book_path(@book) %> |
-<%= link_to 'Назад', books_path %>
+<div><%= link_to "<button class = 'back_button' type='button'></button>".html_safe, books_path %></div>

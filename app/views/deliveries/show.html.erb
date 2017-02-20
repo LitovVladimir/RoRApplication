@@ -1,24 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Книга:</strong>
-  <%= @delivery.book_id %>
-</p>
+<h1 class="table_name">Просмотр записи</h1>
 
-<p>
-  <strong>Абонент:</strong>
-  <%= @delivery.subscriber_id %>
-</p>
+<div class="show_container">
+  <table class="table_blur">
+    <thead>
+    <tr>
+      <th>Книга</th>
+      <th>Абонент</th>
+      <th>Дата доставки</th>
+      <th>Дата возврата</th>
+      <th colspan="3"></th>
+    </tr>
+    </thead>
 
-<p>
-  <strong>Дата выдачи:</strong>
-  <%= @delivery.delivery_date %>
-</p>
-
-<p>
-  <strong>Дата возврата:</strong>
-  <%= @delivery.return_date %>
-</p>
-
-<%= link_to 'Изменить', edit_delivery_path(@delivery) %> |
-<%= link_to 'Назад', deliveries_path %>
+    <tbody>
+        <tr>
+          <td><%= @delivery.book_id %></td>
+          <td><%= @delivery.subscriber_id %></td>
+          <td><%= @delivery.delivery_date %></td>
+          <td><%= @delivery.return_date %></td>
+          <td><%= link_to 'Изменить', edit_delivery_path(@delivery) %></td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<div><%= link_to "<button class = 'back_button' type='button'></button>".html_safe, deliveries_path %></div>

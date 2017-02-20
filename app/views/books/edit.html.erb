@@ -1,6 +1,5 @@
 <h1 class="table_name">Изменение записи "Книга"</h1>
 
 <%= render 'form', book: @book %>
-
-<%= link_to 'Посмотреть', @book %> |
-<%= link_to 'Назад', books_path %>
+|
+<div><%= link_to "<button class = 'back_button' type='button'></button>".html_safe, books_path %></div>

@@ -2,5 +2,5 @@
 
 <%= render 'form', employee: @employee %>
 
-<%= link_to 'Показать', @employee %> |
-<%= link_to 'Назад', employees_path %>
+<div><%= link_to "<button class = 'back_button' type='button'></button>".html_safe, employees_path %></div>
+

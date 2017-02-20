@@ -100,12 +100,6 @@ label {
 .actions{
   text-align: center;
 }
-.link_back{
-  text-align: center;
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  color: #730E15;
-}
 .table_name {
   text-align: center;
 }
@@ -238,4 +232,8 @@ label {
   background-position:center;
   -webkit-filter:grayscale(20%);
   z-index: 1;
+}
+
+.show_container {
+  margin-top: 10%;
 }
