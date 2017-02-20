@@ -106,6 +106,7 @@ label {
 }
 .table_name {
   margin-top: 2%;
+  margin-bottom: 2%;
   text-align: center;
 }
 
@@ -118,6 +119,8 @@ label {
   background: #f5ffff;
   border-collapse: collapse;
   text-align: center;
+  width: auto;
+
 }
 .table_blur th {
   border-top: 1px solid #777777;
@@ -240,5 +243,5 @@ label {
 }
 
 .show_container {
-  margin-top: 10%;
+  margin-top: 5%;
 }
