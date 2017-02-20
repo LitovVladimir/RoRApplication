@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Book:</strong>
+  <strong>Книга:</strong>
   <%= @delivery.book_id %>
 </p>
 
 <p>
-  <strong>Subscriber:</strong>
+  <strong>Абонент:</strong>
   <%= @delivery.subscriber_id %>
 </p>
 
 <p>
-  <strong>Delivery date:</strong>
+  <strong>Дата выдачи:</strong>
   <%= @delivery.delivery_date %>
 </p>
 
 <p>
-  <strong>Return date:</strong>
+  <strong>Дата возврата:</strong>
   <%= @delivery.return_date %>
 </p>
 
-<%= link_to 'Edit', edit_delivery_path(@delivery) %> |
-<%= link_to 'Back', deliveries_path %>
+<%= link_to 'Изменить', edit_delivery_path(@delivery) %> |
+<%= link_to 'Назад', deliveries_path %>

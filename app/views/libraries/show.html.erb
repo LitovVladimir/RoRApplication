@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Id:</strong>
+  <strong>Идентификатор:</strong>
   <%= @library.id %>
 </p>
 
 <p>
-  <strong>Number:</strong>
+  <strong>Номер библиотеки:</strong>
   <%= @library.number %>
 </p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Название:</strong>
   <%= @library.name %>
 </p>
 
 <p>
-  <strong>Address:</strong>
+  <strong>Адрес:</strong>
   <%= @library.address %>
 </p>
 
-<%= link_to 'Edit', edit_library_path(@library) %> |
-<%= link_to 'Back', libraries_path %>
+<%= link_to 'Изменить', edit_library_path(@library) %> |
+<%= link_to 'Назад', libraries_path %>
