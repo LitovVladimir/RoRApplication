@@ -11,47 +11,52 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :'Библиотека' %>
-    <%= f.number_field :library_id %>
-  </div>
+<table class="edit_table">
 
-  <div class="field">
-    <%= f.label :'Фамилия' %>
-    <%= f.text_field :last_name %>
-  </div>
+  <tr>
+    <td><%= f.label :'Библиотека' %></td>
+    <td><%= f.number_field :library_id %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Имя' %>
-    <%= f.text_field :first_name %>
-  </div>
+  <tr>
+    <td><%= f.label :'Фамилия' %></td>
+    <td><%= f.text_field :last_name %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Отчество' %>
-    <%= f.text_field :patronymic %>
-  </div>
+  <tr>
+    <td><%= f.label :'Имя' %></td>
+    <td><%= f.text_field :first_name %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Дата рождения' %>
-    <%= f.date_select :DOB %>
-  </div>
+  <tr>
+    <td><%= f.label :'Отчество' %></td>
+    <td><%= f.text_field :patronymic %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Дата принятия на работу' %>
-    <%= f.date_select :employment_date %>
-  </div>
+  <tr>
+    <td><%= f.label :'Дата рождения' %></td>
+    <td><%= f.date_select :DOB %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Должность' %>
-    <%= f.text_field :post %>
-  </div>
+  <tr>
+    <td><%= f.label :'Дата принятия на работу' %></td>
+    <td><%= f.date_select :employment_date %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Образование' %>
-    <%= f.text_field :education %>
-  </div>
+  <tr>
+    <td><%= f.label :'Должность' %></td>
+    <td><%= f.text_field :post %></td>
+  </tr>
 
-  <div class="actions">
-    <%= f.submit('Сохранить') %>
-  </div>
+  <tr>
+    <td><%= f.label :'Образование' %></td>
+    <td><%= f.text_field :education %></td>
+  </tr>
+
+</table>
+
+<div class="actions">
+  <%= f.submit('Сохранить') %>
+</div>
+
 <% end %>

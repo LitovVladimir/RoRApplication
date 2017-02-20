@@ -11,23 +11,28 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :'Номер библиотеки' %>
-    <%= f.number_field :number %>
-  </div>
 
-  <div class="field">
-    <%= f.label :'Название' %>
-    <%= f.text_field :name %>
-  </div>
+<table class="edit_table">
 
-  <div class="field">
-    <%= f.label :'Адрес' %>
-    <%= f.text_field :address %>
-  </div>
+  <tr>
+    <td><%= f.label :'Номер библиотеки' %></td>
+    <td><%= f.number_field :number %></td>
+  </tr>
 
-  <div class="actions">
-    <%= f.submit('Сохранить') %>
-  </div>
+  <tr>
+    <td><%= f.label :'Название' %></td>
+    <td><%= f.text_field :name %></td>
+  </tr>
+
+  <tr>
+    <td><%= f.label :'Адрес' %></td>
+    <td><%= f.text_field :address %></td>
+  </tr>
+
+</table>
+
+<div class="actions">
+  <%= f.submit('Сохранить') %>
+</div>
 
 <% end %>

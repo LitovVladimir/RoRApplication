@@ -11,47 +11,54 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :'Библиотека' %>
-    <%= f.number_field :library_id %>
-  </div>
 
-  <div class="field">
-    <%= f.label :'Название книги' %>
-    <%= f.text_field :name %>
-  </div>
 
-  <div class="field">
-    <%= f.label :'Автор' %>
-    <%= f.text_field :author %>
-  </div>
+<table class="edit_table">
 
-  <div class="field">
-    <%= f.label :'Шифр' %>
-    <%= f.text_field :cipher %>
-  </div>
+  <tr>
+    <td><%= f.label :'Библиотека' %></td>
+    <td><%= f.number_field :library_id %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Издательство' %>
-    <%= f.text_field :publishing_house %>
-  </div>
+  <tr>
+    <td><%= f.label :'Название книги' %></td>
+    <td><%= f.text_field :name %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Год издания' %>
-    <%= f.number_field :publishing_year %>
-  </div>
+  <tr>
+    <td><%=  f.label :'Автор' %></td>
+    <td><%= f.text_field :author %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Цена' %>
-    <%= f.text_field :price %>
-  </div>
+  <tr>
+    <td><%= f.label :'Шифр' %></td>
+    <td><%= f.text_field :cipher %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Дата поступления' %>
-    <%= f.date_select :receipt_date %>
-  </div>
+  <tr>
+    <td><%= f.label :'Издательство' %></td>
+    <td><%= f.text_field :publishing_house %></td>
+  </tr>
 
-  <div class="actions">
-    <%= f.submit('Сохранить') %>
-  </div>
+  <tr>
+    <td><%= f.label :'Год издания' %></td>
+    <td><%= f.number_field :publishing_year %></td>
+  </tr>
+
+  <tr>
+    <td><%= f.label :'Цена' %></td>
+    <td><%= f.text_field :price %></td>
+  </tr>
+
+  <tr>
+    <td><%= f.label :'Дата поступления' %></td>
+    <td><%= f.date_select :receipt_date %></td>
+  </tr>
+</table>
+
+    <div class="actions">
+      <%= f.submit('Сохранить') %>
+    </div>
+
 <% end %>
+

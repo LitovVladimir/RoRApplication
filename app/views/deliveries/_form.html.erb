@@ -11,27 +11,32 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :'Книга' %>
-    <%= f.number_field :book_id %>
-  </div>
 
-  <div class="field">
-    <%= f.label :'Абонент' %>
-    <%= f.number_field :subscriber_id %>
-  </div>
+<table class="edit_table">
 
-  <div class="field">
-    <%= f.label :'Дата выдачи' %>
-    <%= f.date_select :delivery_date %>
-  </div>
+  <tr>
+    <td><%= f.label :'Книга' %></td>
+    <td><%= f.number_field :book_id %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Дата возврата' %>
-    <%= f.date_select :return_date %>
-  </div>
+  <tr>
+    <td><%= f.label :'Абонент' %></td>
+    <td><%= f.number_field :subscriber_id %></td>
+  </tr>
 
-  <div class="actions">
-    <%= f.submit('Сохранить') %>
-  </div>
+  <tr>
+    <td><%= f.label :'Дата выдачи' %></td>
+    <td><%= f.date_select :delivery_date %></td>
+  </tr>
+
+  <tr>
+    <td><%= f.label :'Дата возврата' %></td>
+    <td><%= f.date_select :return_date %></td>
+  </tr>
+</table>
+
+<div class="actions">
+  <%= f.submit('Сохранить') %>
+</div>
+
 <% end %>

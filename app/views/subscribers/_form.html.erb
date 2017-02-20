@@ -11,42 +11,47 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :'Библиотека' %>
-    <%= f.number_field :library_id %>
-  </div>
+<table class="edit_table">
 
-  <div class="field">
-    <%= f.label :'Номер билета' %>
-    <%= f.number_field :ticket_number %>
-  </div>
+  <tr>
+    <td><%= f.label :'Библиотека' %></td>
+    <td><%= f.number_field :library_id %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Фамилия' %>
-    <%= f.text_field :last_name %>
-  </div>
+  <tr>
+    <td><%= f.label :'Номер билета' %></td>
+    <td><%= f.number_field :ticket_number %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Имя' %>
-    <%= f.text_field :first_name %>
-  </div>
+  <tr>
+    <td><%= f.label :'Фамилия' %></td>
+    <td><%= f.text_field :last_name %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Отчество' %>
-    <%= f.text_field :patronymic %>
-  </div>
+  <tr>
+    <td><%= f.label :'Имя' %></td>
+    <td><%= f.text_field :first_name %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Адрес' %>
-    <%= f.text_field :address %>
-  </div>
+  <tr>
+    <td><%= f.label :'Отчество' %></td>
+    <td><%= f.text_field :patronymic %></td>
+  </tr>
 
-  <div class="field">
-    <%= f.label :'Телефон' %>
-    <%= f.text_field :phone %>
-  </div>
+  <tr>
+    <td><%= f.label :'Адрес' %></td>
+    <td><%= f.text_field :address %></td>
+  </tr>
 
-  <div class="actions">
-    <%= f.submit('Сохранить') %>
-  </div>
+  <tr>
+    <td><%= f.label :'Телефон' %></td>
+    <td><%= f.text_field :phone %></td>
+  </tr>
+
+</table>
+
+<div class="actions">
+  <%= f.submit('Сохранить') %>
+</div>
+
 <% end %>
