@@ -42,7 +42,8 @@
         <td><%= link_to 'Посмотреть', library %></td>
         <td><%= link_to 'Изменить', edit_library_path(library) %></td>
         <td><%= link_to 'Удалить', library, method: :delete,
-                        data: { confirm: 'Вы уверены, что хотите удалить запись?' } %></td>
+                        data: { confirm: "Все записи связанные с данной будут удалены!
+         Вы уверены, что хотите удалить запись?" } %></td>
       </tr>
     <% end %>
   </tbody>

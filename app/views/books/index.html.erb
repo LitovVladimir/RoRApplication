@@ -48,7 +48,8 @@
         <td><%= link_to 'Посмотреть', book %></td>
         <td><%= link_to 'Изменить', edit_book_path(book) %></td>
         <td><%= link_to 'Удалить', book, method: :delete,
-                        data: { confirm: 'Вы уверены, что хотите удалить запись?' } %></td>
+                        data: { confirm: "Все записи связанные с данной будут удалены!
+         Вы уверены, что хотите удалить запись?" } %></td>
       </tr>
     <% end %>
   </tbody>
